@@ -16,7 +16,7 @@ variable "resource_group" {
 ##################################################
 variable "location" {
   description = "Location Name"
-  default     = "satellite-ibm"
+  default     = "satellite-ibm-demo024"
 
   validation {
     error_message = "Location name must begin and end with a letter and contain only letters, numbers, and - characters."
@@ -76,7 +76,7 @@ variable "addl_host_count" {
 variable "is_prefix" {
   description = "Prefix to the Names of the VPC Infrastructure resources"
   type        = string
-  default     = "satellite-ibm"
+  default     = "satellite-ibm-vpc"
 }
 
 variable "public_key" {
