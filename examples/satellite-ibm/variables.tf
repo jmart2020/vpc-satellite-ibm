@@ -16,7 +16,7 @@ variable "resource_group" {
 ##################################################
 variable "location" {
   description = "Location Name"
-  default     = "satellite-ibm"
+  default     = "satellite-ibm-demo2024"
 
   validation {
     error_message = "Cluster name must begin and end with a letter and contain only letters, numbers, and - characters."
@@ -97,7 +97,7 @@ variable "cp_hosts" {
   )
   default = [
     {
-      instance_type = "mx2-8x64"
+      instance_type = "bx2-4x16"
       count         = 3
     }
   ]
@@ -158,13 +158,13 @@ variable "ssh_key_id" {
 variable "location_profile" {
   description = "[Deprecated] Profile information of location hosts"
   type        = string
-  default     = "mx2-8x64"
+  default     = "bx2-4x16"
 }
 
 variable "cluster_profile" {
   description = "[Deprecated] Profile information of Cluster hosts"
   type        = string
-  default     = "mx2-8x64"
+  default     = "bx2-4x16"
 }
 
 variable "worker_image" {
