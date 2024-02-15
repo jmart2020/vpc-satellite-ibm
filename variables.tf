@@ -88,13 +88,13 @@ variable "public_key" {
 variable "location_profile" {
   description = "Profile information of location hosts"
   type        = string
-  default     = "mx2-8x64"
+  default     = "bx2-4x16"
 }
 
 variable "cluster_profile" {
   description = "Profile information of Cluster hosts"
   type        = string
-  default     = "mx2-8x64"
+  default     = "bx2-4x16"
 }
 
 ##################################################
