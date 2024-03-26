@@ -9,6 +9,7 @@ variable "region" {
 
 variable "resource_group" {
   description = "Name of the resource group on which location has to be created"
+  default     = "default"
 }
 
 ##################################################
@@ -16,7 +17,7 @@ variable "resource_group" {
 ##################################################
 variable "location" {
   description = "Location Name"
-  default     = "satellite-ibm-demo024"
+  default     = "satellite-ibm-demo24"
 
   validation {
     error_message = "Location name must begin and end with a letter and contain only letters, numbers, and - characters."
